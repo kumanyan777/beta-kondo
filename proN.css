@@ -47,20 +47,3 @@ body {
   text-decoration: none;
   background-color: #505050;
 }
-
-.button04 a:hover::after {
-  border-top: 3px solid #ffffff;
-  border-right: 3px solid #ffffff;
-}
-
-.footer {
-  margin-top: 300px;
-  text-align: center;
-}
-
-.footer p {
-  color: white;
-  line-height: 2em;
-  font-family: serif;
-  font-size: 20px;
-}
