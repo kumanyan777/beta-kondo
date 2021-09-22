@@ -13,7 +13,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  background-image: url(../image/game2.png);
+  background-image: url(game2.png);
   display: flex;
   justify-content: center;
   align-items: center;
