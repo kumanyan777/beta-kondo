@@ -8,28 +8,111 @@ body {
   background-color: black;
 }
 
-.header {
-  background: rgb(0, 0, 0);
-  margin: 100px 0;
+.serifu p {
+  margin: 100px;
+	color: white;
+	font-size: 30px;
+	margin-bottom: 50px;
   text-align: center;
+  font-family: serif;
 }
 
-.header img {
- 
-  width: 20%;
-}
-
-.image {
+.imagemain {
   margin: 10px 100px;
-  height: 80vh; /* 全画面表示 */
+  height: 85vh; /* 全画面表示 */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(game2.png);
+  background-image: url(../image/game2.png);
+}
+
+.imagemain1 {
+  margin: 10px 0;
+  height: 85vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(../image/pool.png);
+}
+
+.imagemain2 {
+  margin: 10px 0;
+  height: 85vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(../image/game2.png);
+}
+
+.imagemain3 {
+  margin: 10px 0;
+  height: 85vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(../image/library.png);
+}
+
+.imagemain4 {
+  margin: 10px 0;
+  height: 85vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(../image/art.png);
+}
+
+.imagemain5 {
+  margin: 10px 0;
+  height: 85vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(../image/room.png);
+}
+
+.imageq {
+  width: 80%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.image1 {
+  animation-name: game;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  width: 40%;
+  margin-right: 400px;
+  margin-top: 100px;
+}
+
+@keyframes game {
+  0% {
+      transform: translate(0,0px);
+  }
+
+  100% {
+      transform: translate(0,-15px)
+  }
+}
+
+.image {
+  width: 90%;
+  margin-top: 40px;
 }
 
 .main {
-  margin-top: 300px;
+  margin-top: 100px;
+}
+
+.main p {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: serif;
 }
 
 
@@ -45,13 +128,14 @@ body {
   height: 50px;
   background-color: rgb(66, 66, 66);
   line-height: 50px;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   display: block;
   float: left;
   order: -1;
   border-radius: 20px 20px 20px 20px;
   margin-right: 2%;
+  font-family: serif;
 }
 
 .tab_class:last-of-type {
@@ -83,23 +167,7 @@ input:checked + .tab_class + .content_class {
   display: block;
 }
 
-.text {
-  text-align: center;
-  width: 40%;
-  margin: auto;
-}
 
-.text h1 {
-  font-size: 50px;
-  color: white;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
 
-.text p {
-  color: white;
-  font-size: 20px;
-  margin-bottom: 80px;
-}
 
 
