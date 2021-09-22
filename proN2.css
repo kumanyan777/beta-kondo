@@ -9,11 +9,18 @@ body {
 
 .image {
     margin: 10px 100px;
-    height: 100vh; /* 全画面表示 */
+    height: 85vh; /* 全画面表示 */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
-    background-image: url(game1.png);
+    background-image: url(../image/game1.png);
+}
+
+.serifu p {
+	color: white;
+	font-size: 30px;
+	margin-bottom: 50px;
+	font-family: serif;
 }
 
 :root {
@@ -55,7 +62,6 @@ body {
 	animation-duration: 12s;
 	animation-fill-mode: forwards;
 	max-width: 320px;
-	transition-delay : 10s;
 }
 
 .msg-three {
@@ -80,6 +86,8 @@ body {
   margin-top: 40px;
 	width: 400px;
 }
+
+
 
 .msg-content {
 	height: var(--msg-content-height);
@@ -358,4 +366,6 @@ body {
     border-top: 3px solid #ffffff;
     border-right: 3px solid #ffffff;
   }
+
+
 
