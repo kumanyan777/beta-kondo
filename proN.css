@@ -47,3 +47,14 @@ body {
   text-decoration: none;
   background-color: #505050;
 }
+
+.button04 a:hover::after {
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+}
+
+.footer img{
+  margin-top: 300px;
+  width: 100%;
+}
+
