@@ -167,6 +167,29 @@ input:checked + .tab_class + .content_class {
   display: block;
 }
 
+.quiz-input{
+  width: 800px;
+  margin-left: 310px;
+  height: 70px;
+  margin-top:15px ;
+}
+
+.btn{
+  margin-left: 310px;
+}
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.hint{
+  color: #fff;
+}
+
 
 
 
