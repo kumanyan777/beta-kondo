@@ -5,88 +5,27 @@
   
   body {
     background-color: black;
-  }
-
-  body h1 {
-    color: white;
+    text-align: center;
   }
   
 .image {
-  margin: 10px 100px;
+  margin: 10px 50px;
   height: 80vh; 
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
-  background-image: url(game1.png);
+  background-image: url(../image/room.png);
 }
 
 .gropu {
   display: flex;
 }
-
-/* 黒板 */
-
-.clearfix {
-  margin-top: 200px;
-}
-
-.blackboard {
-  position: relative;
-  margin: 0 auto 1.5rem;
-  padding: 1.6rem 1rem;
-  font-size: 50px;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 0 4px #fff inset;
-}
-
-.blackboard.answer p {
-  margin-left: 3rem;
-}
-
-/* .blackboard .blink-before {
-  font-size: 1.2rem;
-} */
-
-.blackboard a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.blackboard .blink-before::before {
-  content: '▶';
-  position: absolute;
-  left: 1rem;
-  animation: blink 1.4s infinite;
-}
-
-.blackboard p:last-of-type {
-  margin-bottom: 0;
-}
-
- /* 回り込み */
-.float-r {
-  float: right;
-}
-
- /* 回り込み解除 */
-.clearfix {
-  zoom: 1;
-}
-
-.clearfix:after {
-  clear: both;
-  content: "";
-  display: block;
-}
-
- /* 点滅 */
-@keyframes blink {
-  50% { opacity: 0; }
-}
-
-@-webkit-keyframes blink {
-  50% { opacity: 0; }
+.serifu p {
+	color: white;
+  font-size: 30px;
+  margin-top: 50px;
+	margin-bottom: 50px;
+  font-family: serif;
 }
 
 .image1 {
@@ -95,8 +34,8 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-duration: 1.5s;
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  margin-top: 100px;
   margin-right: 400px;
   /* margin-top: 100px; */
 }
@@ -110,4 +49,56 @@
       transform: translate(0,-15px)
   }
 }
+
+.area {
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+ 
+.tab_class {
+  width: calc(92%/4);
+  height: 50px;
+  background-color: rgb(66, 66, 66);
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  float: left;
+  order: -1;
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 2%;
+  font-family: serif;
+}
+
+.tab_class:last-of-type {
+  margin-right: 0;
+}
+ 
+input[name="tab_name"] {
+  display: none;
+}
+ 
+input:checked + .tab_class {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+ 
+.content_class {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+ 
+input:checked + .tab_class + .content_class {
+  display: block;
+}
+
+.imageq {
+  width: 80%;
+  text-align: center;
+  margin-top: 50px;
+}
+  
   
