@@ -13,7 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    background-image: url(../image/game1.png);
+    background-image: url(game1.png);
 }
 
 .serifu p {
